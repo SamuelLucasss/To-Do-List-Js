@@ -1,4 +1,4 @@
-# Lista de Tarefas Js📋
+# Lista de Tarefas Js 📋
 <img src="./preview-todo-list.jpg" alt="Mockup do Projeto">
 To do List desenvolvido com HTML, CSS e JAVASCRIPT.
 
