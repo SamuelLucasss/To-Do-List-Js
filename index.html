@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="./js/script.js" defer></script>
+
+    <title>Todo List Js</title>
+</head>
+<body>
+    
+    <div class="container-todo">
+        <header>
+            <h1>Todo Avançado</h1>
+        </header>
+
+        <form id="todo-form-container">
+            <p>Adicione a sua tarefa</p>
+
+            <div class="todo-form">
+                <input type="text" id="todo-input" placeholder="O que você vai fazer?"/>
+
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+
+        <form id="edit-form-container" class="hide">
+            <p>Edite a sua tarefa:</p>
+
+            <div class="edit-form">
+                <input type="text" id="edit-input"/>
+
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+
+            <button id="edit-cancel-btn">Cancelar</button>
+        </form>
+
+        <div id="esconder-ferramentas">
+            <div class="ferramentas">
+                <div class="pesquisar">
+                    <h4>Pesquisar:</h4>
+                    <form>
+                        <input type="text" id="pesquisar-input" placeholder="Buscar"/>
+                        <button class="apagar-btn-pesquisar">
+                            <i class="fa-solid fa-delete-left"></i>
+                        </button>
+                    </form>
+                </div>
+                <div id="filtro">
+                    <h4>Filtrar:</h4>
+                    <select id="filtro-select">
+                        <option value="todos">Todos</option>
+                        <option value="feitos">Feitos</option>
+                        <option value="afazer">A fazer</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="todo-list">
+            <div class="todo feito">
+                <h3>Estudar HTML5</h3>
+
+                <button class="tarefa-finalizada">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="editar-tarefa">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="excluir-tarefa">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="todo">
+                <h3>Aprender JAVASCRIPT</h3>
+
+                <button class="tarefa-finalizada">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="editar-tarefa">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="excluir-tarefa">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

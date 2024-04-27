@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: helvetica, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+    background-attachment: fixed;
+}
+button {
+    background-color: #FDFDFD;
+    color: #102F5E;
+    border: 2px solid #102F5E;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+button:hover {
+    background-color: #102F5E;
+    color: white;
+}
+button:hover > i {
+    color: white;
+}
+button i {
+    color: #102F5E;
+    font-weight: bold;
+    pointer-events: none;
+}
+input,
+select {
+    padding: 0.25rem 0.5rem;
+}
+.hide {
+    display: none;
+}
+
+/* Todo Header */
+.container-todo {
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: #FDFDFD;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+.container-todo header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #CCC;
+}
+/* Todo Form */
+#todo-form-container,
+#edit-form-container {
+    padding: 1rem;
+    border-bottom: 1px solid #CCC;
+}
+#todo-form-container p,
+#edit-form-container p {
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+.todo-form,
+.edit-form {
+    display: flex;
+}
+.todo-form input,
+.edit-form input {
+    margin-right: .3rem;
+}
+#edit-cancel-btn {
+    margin-top: 1rem;
+}
+
+/* Barra de ferramentas */
+.ferramentas {
+    padding: 1rem;
+    border-bottom: 1px solid #CCC;
+    display: flex;
+}
+.ferramentas h4 {
+    margin-bottom: .5rem;
+}
+.pesquisar {
+    border-right: 1px solid #CCC;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+.pesquisar form {
+    display: flex;
+}
+.pesquisar input {
+    width: 100%;
+    margin-right: 0.3rem;
+}
+#filtro {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+#filtro select {
+    flex: 1;
+}
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #CCC;
+    transition: .3s;
+}
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+}
+.todo button {
+    margin-left: 0.4rem;
+}
+.feito {
+    background-color: #395169;
+}
+.feito h3 {
+    color: white;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
